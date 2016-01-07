@@ -12,12 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CORSFilter implements Filter {
 
-	@Override
 	public void destroy() {
 
 	}
 
-	@Override
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 		System.out.println("Filtering on...........................................................");
@@ -29,8 +27,7 @@ public class CORSFilter implements Filter {
 		chain.doFilter(req, res);
 	}
 
-	@Override
-	public void init(FilterConfig arg0) throws ServletException {
+	public void init(FilterConfig filterConfig) {
 
 	}
 

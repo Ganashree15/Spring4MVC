@@ -26,4 +26,5 @@ public class HWinitializer extends AbstractAnnotationConfigDispatcherServletInit
 		Filter[] singleton = { new CORSFilter() };
 		return singleton;
 	}
+
 }
